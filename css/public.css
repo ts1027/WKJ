@@ -1,0 +1,29 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+i,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+body{
+  font-family: 宋体,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: #333;
+}

@@ -1,0 +1,446 @@
+
+.clf:before,.clf:after{
+   content:'';
+   display: block;
+   height: 0;
+   line-height: 0;
+   clear: both;
+}
+@media screen and (max-width:768px) {
+  .nav {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    & .nav-left {
+      border-bottom: 1px solid #333;
+      float: left;
+      width: 100%;
+      height: 50px;
+      background: #000;
+      position: relative;
+      a {
+        display: block;
+        background: url(../images/logo-black.png) no-repeat;
+        height: 100%;
+        background-position: 10px center;
+        background-size: 145px 25px;
+      }
+      .navbar-toggle {
+        width: 44px;
+        height: 34px;
+        border: 1px solid #333;
+        background: url(../images/btn-close.png) no-repeat center center;
+        position: absolute;
+        background-size: 60%;
+        top: 2px;
+        right: 5px;
+        display: block;
+      }
+    }
+    & .nav-middle {
+      display: none;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      .first {
+        height: 100%;
+        float: left;
+        width: 100%;
+        background: #000;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        li {
+          height: 100%;
+          float: left;
+          width: 100%;
+          padding-left: 10px;
+          a {
+            float: left;
+            line-height: 40px;
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: #fff;
+            width: 100%;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+        li:hover {
+          background: #F15A25;
+        }
+        li:nth-last-of-type(1) a {
+          border-bottom: 1px solid #c1c1c1;
+        }
+        .active {
+          background: #f15a25;
+        }
+      }
+      .nav-right {
+        float: right;
+        height: 81px;
+        width: 100%;
+        overflow: hidden;
+        background: #000;
+        ul {
+          width: 100%;
+          height: 81px;
+          background: #000;
+          li {
+            height: 40px;
+            float: left;
+            width: 100%;
+            padding-left: 10px;
+            a {
+              float: left;
+              line-height: 40px;
+              text-align: left;
+              margin-left: 20px;
+              margin-right: 20px;
+              color: #fff;
+              width: 100%;
+            }
+            a:hover{
+              text-decoration: none;
+              color:#F15A25;
+            }
+          }
+          .deng {
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .nav {
+      width: 100%;
+      min-height: 50px;
+      margin-bottom: 20px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      & .nav-left {
+        border-bottom: 1px solid #333;
+        float: left;
+        width: 100%;
+        height: 50px;
+        background: #000;
+        position: relative;
+        a {
+          display: block;
+          background: url(../images/logo-black.png) no-repeat;
+          height: 100%;
+          background-position: 10px center;
+          background-size: 145px 25px;
+        }
+        .navbar-toggle {
+          width: 44px;
+          height: 34px;
+          border: 1px solid #333;
+          background: url(../images/btn-close.png) no-repeat center center;
+          position: absolute;
+          background-size: 60%;
+          top: 2px;
+          right: 5px;
+          display: block;
+        }
+      }
+      & .nav-middle {
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        background: #000;
+        .first {
+          overflow: hidden;
+          width: 750px;
+          margin-right: auto;
+          margin-left: auto;
+          height: 100%;
+          background: #000;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          li {
+            height: 100%;
+            float: left;
+            width: 100%;
+            padding-left: 10px;
+            a {
+              float: left;
+              line-height: 40px;
+              text-align: left;
+              margin-left: 20px;
+              margin-right: 20px;
+              width: 100%;
+              color: #fff;
+            }
+            a:hover {
+              text-decoration: none;
+            }
+          }
+          li:hover {
+            background: #F15A25;
+          }
+          li:nth-last-of-type(1) a {
+            border-bottom: 1px solid #c1c1c1;
+          }
+          .active {
+            background-color: #f15a25;
+
+          }
+        }
+        .nav-right {
+          margin-right: auto;
+          margin-left: auto;
+          height: 81px;
+          width: 750px;
+          overflow: hidden;
+          background: #000;
+          .login {
+            width: 100%;
+            height: 81px;
+            background: #000;
+            li {
+              height: 40px;
+              float: left;
+              width: 100%;
+              padding-left: 10px;
+              a {
+                float: left;
+                line-height: 40px;
+                text-align: left;
+                margin-left: 20px;
+                margin-right: 20px;
+                color: #fff;
+                width: 100%;
+              }
+              a:hover{
+                text-decoration: none;
+                color:#F15A25;
+              }
+            }
+            .deng {
+              display: none;
+              width: 100%;
+              height: 100%;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  /*小屏*/
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .nav {
+      width: 100%;
+      min-height: 50px;
+      margin-bottom: 20px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      & .nav-left {
+        float: left;
+        width: 32%;
+        height: 60px;
+        a {
+          display: block;
+          background-image: url('../images/logo.png');
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 80%;
+        }
+      }
+      & .nav-middle {
+        display: block!important;
+        height: 60px;
+        width: 100%;
+        .first {
+          margin-left: 30px;
+          height: 100%;
+          float: left;
+          li {
+            height: 100%;
+            float: left;
+            a {
+              float: left;
+              line-height: 60px;
+              text-align: center;
+              padding: 0 11px;
+              color: #fff;
+            }
+            a:hover {
+              background: #F15A25;
+              text-decoration: none;
+              box-shadow: 5px 5px 20px #ccc;
+            }
+          }
+          .active {
+            background-color: #f15a25;
+            box-shadow: 5px 5px 20px #ccc;
+          }
+
+        }
+        .nav-right {
+          float: right;
+          margin-right: 10px;
+          height: 50px;
+          width: 50px;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+          }
+          .login {
+            display: none;
+            position: absolute;
+            right: 0;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            background-color: #fff;
+            font-size: 14px;
+            text-align: left;
+            border: 1px solid rgba(0, 0, 0, .5);
+            color: #000;
+            a {
+              display: block;
+              padding: 3px 20px;
+              clear: both;
+              font-weight: normal;
+              line-height: 1.42857143;
+              color: #333;
+            }
+            a:hover {
+              background: #F15A25;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  };
+  @media screen and (min-width: 1200px) {
+    .nav {
+      width: 100%;
+      min-height: 50px;
+      margin-bottom: 20px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      & .nav-left {
+        float: left;
+        width: 32%;
+        height: 80px;
+        a {
+          background-image: url('../images/logo.png');
+          display: block;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+      & .nav-middle {
+        display: block!important;
+        height: 80px;
+        width: 100%;
+        .first {
+          height: 100%;
+          float: left;
+          margin-left: 60px;
+          li {
+            height: 100%;
+            float: left;
+            a {
+              float: left;
+              line-height: 80px;
+              text-align: center;
+              padding: 0 18px;
+              color: #fff;
+            }
+            a:hover {
+              background: #F15A25;
+              text-decoration: none;
+            }
+          }
+          .active {
+            background-color: #f15a25;
+          }
+        }
+        .nav-right {
+          float: right;
+          height: 70px;
+          width: 70px;
+          .login {
+            display: none;
+            position: absolute;
+            right: 0;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            background-color: #fff;
+            font-size: 14px;
+            text-align: left;
+            border: 1px solid rgba(0, 0, 0, .5);
+            color: #000;
+            a {
+              display: block;
+              padding: 3px 20px;
+              clear: both;
+              font-weight: normal;
+              line-height: 1.42857143;
+              color: #333;
+            }
+            a:hover {
+              background: #F15A25;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  };
+
+
+
+  //banner
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    .banner-box {
+      background-position: right center;
+      height: 100%;
+    }
+  }
+
+

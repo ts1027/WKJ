@@ -1,0 +1,436 @@
+.clf:before,
+.clf:after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .nav .nav-left {
+    border-bottom: 1px solid #333;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: relative;
+  }
+  .nav .nav-left a {
+    display: block;
+    background: url(../images/logo-black.png) no-repeat;
+    height: 100%;
+    background-position: 10px center;
+    background-size: 145px 25px;
+  }
+  .nav .nav-left .navbar-toggle {
+    width: 44px;
+    height: 34px;
+    border: 1px solid #333;
+    background: url(../images/btn-close.png) no-repeat center center;
+    position: absolute;
+    background-size: 60%;
+    top: 2px;
+    right: 5px;
+    display: block;
+  }
+  .nav .nav-middle {
+    display: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .nav .nav-middle .first {
+    height: 100%;
+    float: left;
+    width: 100%;
+    background: #000;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .nav .nav-middle .first li {
+    height: 100%;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .nav .nav-middle .first li a {
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    width: 100%;
+  }
+  .nav .nav-middle .first li a:hover {
+    text-decoration: none;
+  }
+  .nav .nav-middle .first li:hover {
+    background: #F15A25;
+  }
+  .nav .nav-middle .first li:nth-last-of-type(1) a {
+    border-bottom: 1px solid #c1c1c1;
+  }
+  .nav .nav-middle .first .active {
+    background: #f15a25;
+  }
+  .nav .nav-middle .nav-right {
+    float: right;
+    height: 81px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+  .nav .nav-middle .nav-right ul {
+    width: 100%;
+    height: 81px;
+    background: #000;
+  }
+  .nav .nav-middle .nav-right ul li {
+    height: 40px;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .nav .nav-middle .nav-right ul li a {
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    width: 100%;
+  }
+  .nav .nav-middle .nav-right ul li a:hover {
+    text-decoration: none;
+    color: #F15A25;
+  }
+  .nav .nav-middle .nav-right ul .deng {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .nav {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .nav .nav-left {
+    border-bottom: 1px solid #333;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: relative;
+  }
+  .nav .nav-left a {
+    display: block;
+    background: url(../images/logo-black.png) no-repeat;
+    height: 100%;
+    background-position: 10px center;
+    background-size: 145px 25px;
+  }
+  .nav .nav-left .navbar-toggle {
+    width: 44px;
+    height: 34px;
+    border: 1px solid #333;
+    background: url(../images/btn-close.png) no-repeat center center;
+    position: absolute;
+    background-size: 60%;
+    top: 2px;
+    right: 5px;
+    display: block;
+  }
+  .nav .nav-middle {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+  .nav .nav-middle .first {
+    overflow: hidden;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    background: #000;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .nav .nav-middle .first li {
+    height: 100%;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .nav .nav-middle .first li a {
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    color: #fff;
+  }
+  .nav .nav-middle .first li a:hover {
+    text-decoration: none;
+  }
+  .nav .nav-middle .first li:hover {
+    background: #F15A25;
+  }
+  .nav .nav-middle .first li:nth-last-of-type(1) a {
+    border-bottom: 1px solid #c1c1c1;
+  }
+  .nav .nav-middle .first .active {
+    background-color: #f15a25;
+  }
+  .nav .nav-middle .nav-right {
+    margin-right: auto;
+    margin-left: auto;
+    height: 81px;
+    width: 750px;
+    overflow: hidden;
+    background: #000;
+  }
+  .nav .nav-middle .nav-right .login {
+    width: 100%;
+    height: 81px;
+    background: #000;
+  }
+  .nav .nav-middle .nav-right .login li {
+    height: 40px;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .nav .nav-middle .nav-right .login li a {
+    float: left;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    width: 100%;
+  }
+  .nav .nav-middle .nav-right .login li a:hover {
+    text-decoration: none;
+    color: #F15A25;
+  }
+  .nav .nav-middle .nav-right .login .deng {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+/*小屏*/
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .nav {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .nav .nav-left {
+    float: left;
+    width: 32%;
+    height: 60px;
+  }
+  .nav .nav-left a {
+    display: block;
+    background-image: url('../images/logo.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+  }
+  .nav .nav-middle {
+    display: block!important;
+    height: 60px;
+    width: 100%;
+  }
+  .nav .nav-middle .first {
+    margin-left: 30px;
+    height: 100%;
+    float: left;
+  }
+  .nav .nav-middle .first li {
+    height: 100%;
+    float: left;
+  }
+  .nav .nav-middle .first li a {
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    padding: 0 11px;
+    color: #fff;
+  }
+  .nav .nav-middle .first li a:hover {
+    background: #F15A25;
+    text-decoration: none;
+    box-shadow: 5px 5px 20px #ccc;
+  }
+  .nav .nav-middle .first .active {
+    background-color: #f15a25;
+    box-shadow: 5px 5px 20px #ccc;
+  }
+  .nav .nav-middle .nav-right {
+    float: right;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  .nav .nav-middle .nav-right a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .nav .nav-middle .nav-right .login {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: #000;
+  }
+  .nav .nav-middle .nav-right .login a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+  }
+  .nav .nav-middle .nav-right .login a:hover {
+    background: #F15A25;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .nav .nav-left {
+    float: left;
+    width: 32%;
+    height: 80px;
+  }
+  .nav .nav-left a {
+    background-image: url('../images/logo.png');
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .nav .nav-middle {
+    display: block!important;
+    height: 80px;
+    width: 100%;
+  }
+  .nav .nav-middle .first {
+    height: 100%;
+    float: left;
+    margin-left: 60px;
+  }
+  .nav .nav-middle .first li {
+    height: 100%;
+    float: left;
+  }
+  .nav .nav-middle .first li a {
+    float: left;
+    line-height: 80px;
+    text-align: center;
+    padding: 0 18px;
+    color: #fff;
+  }
+  .nav .nav-middle .first li a:hover {
+    background: #F15A25;
+    text-decoration: none;
+  }
+  .nav .nav-middle .first .active {
+    background-color: #f15a25;
+  }
+  .nav .nav-middle .nav-right {
+    float: right;
+    height: 70px;
+    width: 70px;
+  }
+  .nav .nav-middle .nav-right .login {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: #000;
+  }
+  .nav .nav-middle .nav-right .login a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+  }
+  .nav .nav-middle .nav-right .login a:hover {
+    background: #F15A25;
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav .nav-middle .nav-right a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.banner .banner-box {
+  background-position: right center;
+  height: 100%;
+}
