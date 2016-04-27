@@ -426,11 +426,8 @@
   }
 }
 .banner {
-  position: relative;
-  width: 100%;
   height: 500px;
 }
-.banner .banner-box {
-  background-position: right center;
-  height: 100%;
+.banner .right-btn {
+  background: url("../images/left.png") !important;
 }

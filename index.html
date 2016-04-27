@@ -5,9 +5,11 @@
     <title>维克家</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="css/public.min.css">
     <link rel="stylesheet" href="css/indexmin.css">
     <script src="js/jquery.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -46,10 +48,16 @@
 <!--header over-->
 
 <!--banner-->
-<div class="banner">
-    <div class="banner-box" style="background-image:url(images/banner1.jpg)">
-        <a href="#"></a>
+<div class="swiper-container banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('images/banner1.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/banner2.jpg')"></div>
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next right-btn"></div>
+    <div class="swiper-button-prev"></div>
 </div>
 <!--banner over-->
 </body>
